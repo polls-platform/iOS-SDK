@@ -11,18 +11,18 @@ import Foundation
  The PollOptionResponse object is the structure of options when they are returned from the SDK.
  For example, when a user taps view details on an option, the SDK will provide the option in this structure
  */
-public protocol PollOptionResponse: Codable {
+public struct PollOptionResponse: Codable {
     
     /**
      The ID of the option
      */
-    var id: UUID { get }
+    public let id: UUID
     /**
      The URL of the option which was provided when creating the poll
      */
-    var url: URL { get }
+    public let url: URL
     /**
      The Resource ID of the option if one was provided when creating the poll
      */
-    var resourceId: String { get }
+    public let resourceId: String
 }

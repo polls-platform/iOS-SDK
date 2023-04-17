@@ -24,7 +24,7 @@ public func createPoll(poll: Poll) -> PollResponse? {
     
     // TODO: impelement
     
-    return nil
+    return PollResponse(url: URL(string: "https://demo.pollsplatform.com/polls/d2023c20-4a52-4813-a038-fc90085d18f8?theme=seated&jpid=5995fdd7-d33f-4cc8-82ad-a6360a5a2e4f&embeddedState=sdk-mobile-app-ios")!)
     
 }
 
